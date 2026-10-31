@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polígrafo</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <img src="" alt="">
+    <main >
+        <h1>Patric Jane e o polígrafo</h1>
+        <section>
+            O polígrafo um dispositivo capaz de coletar informações dos investigados e emitir um parecer baseado nas respostas fornecidas. Um teste de polígrafo funciona medindo reações fisiológicas involuntárias, como respiração, pressão arterial, suor e batimentos cardíacos, enquanto a pessoa responde a perguntas estruturadas, permitindo ao examinador comparar padrões e identificar possíveis sinais de engano. fonte: <a href="https://liedetectortest.com/polygraph/how-a-polygraph-works" target="_blank">(https://liedetectortest.com/polygraph/how-a-polygraph-works)</a>. Porém, aqueles que conhecem "Patric Jane" ou "O mentalista" sabem de sua indiscútivel capacidade de analisar e interpretar pessoas, a qual foi utilizada na elaborção das perguntas. 
+        </section>
+             <div id="botaoIniciar"><input type="button"  id="comecarQuestionario" onclick="comecarQuestionario()" value=" Iniciar questionário"></input></div>
+     
+         </main>
+
+    
+          <article id="questionario">
+        
+     <div class="d1" id="perguntas">
+        
+        </div>
+        
+        <div class="d2">
+            <select id="opcoes">
+                <option value=" ">Respostas</option>
+                <option value="10">Sim</option>
+                <option value="0">Não</option>
+            </select>
+        </div>
+
+        <div class="d3" >
+            <input id="responder" onclick="responder()" type="button" value="Responder"></input>
+        </div>
+
+        <div class="d4" >
+            <button id="gerar" onclick="gerarGrafico()">Gerar gráfico</button>
+        </div>
+   <div class="d5" >
+       
+                 
+                 
+        </div>
+                </article>
+
+     <figure id = "relatorio">
+
+     <div><h2 id = "titulo"> </h2></div> <br><br><br>
+     <div><h2 id = "suspeita"></h2></div>
+      <div><h2 id = "status"></h2></div>
+        <div class="d6">
+        <div>
+                <canvas id="Grafico"></canvas>
+        </div>
+
+       
+        </div>
+        
+      </figure>
+
+ <div><button id="reload" onclick="reload()"> Reiniciar teste </button></div>
+ 
+   
+    <script src="chart.js/dist/chart.umd.js"></script>
+    
+  
+    <script src="grafico.js"></script>
+</body>
+</html>
