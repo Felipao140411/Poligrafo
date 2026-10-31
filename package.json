@@ -6,33 +6,33 @@
   "license": "MIT",
   "type": "module",
   "sideEffects": [
-    "./auto/auto.js",
-    "./auto/auto.cjs",
-    "./dist/chart.umd.min.js",
-    "./dist/chart.umd.js"
+    "auto.js",
+    "auto.cjs",
+    "chart.umd.min.js",
+    "chart.umd.js"
   ],
-  "jsdelivr": "./dist/chart.umd.min.js",
-  "unpkg": "./dist/chart.umd.min.js",
-  "main": "./dist/chart.cjs",
-  "module": "./dist/chart.js",
+  "jsdelivr": "chart.umd.min.js",
+  "unpkg": "chart.umd.min.js",
+  "main": "chart.cjs",
+  "module": "chart.js",
   "exports": {
     ".": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/chart.js",
-      "require": "./dist/chart.cjs"
+      "types": "types.d.ts",
+      "import": "chart.js",
+      "require": "chart.cjs"
     },
     "./auto": {
-      "types": "./auto/auto.d.ts",
-      "import": "./auto/auto.js",
-      "require": "./auto/auto.cjs"
+      "types": "auto.d.ts",
+      "import": "auto.js",
+      "require": "auto.cjs"
     },
     "./helpers": {
-      "types": "./helpers/helpers.d.ts",
-      "import": "./helpers/helpers.js",
-      "require": "./helpers/helpers.cjs"
+      "types": "helpers.d.ts",
+      "import": "helpers.js",
+      "require": "helpers.cjs"
     }
   },
-  "types": "./dist/types.d.ts",
+  "types": "types.d.ts",
   "keywords": [
     "canvas",
     "charts",
